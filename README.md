@@ -30,7 +30,8 @@ create GPU env
 conda create --channel=conda-forge --name tf \
   python=3.9 \
   nvidia::cudatoolkit=11.2 \
-  tensorflow=2.9.1=*cuda112*py39* 
+  jupyter
+  # tensorflow=2.9.1=*cuda112*py39* \
 ```
 
 ### CPU setup 
@@ -40,9 +41,6 @@ create CPU env
 ```bash
 conda create --channel=conda-forge --name tf \
   python=3.9 \
-  tensorflow=2.9.1=*cpu*py39*
+  tensorflow=2.9.1=*cpu*py39* \
+  jupyter
 ```
-
-
-  - transformers[sklearn,sentencepiece,audio,vision]==4.21.1
-  - tensorflow-text
